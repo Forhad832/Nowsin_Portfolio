@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className='fixed top-0 z-50 w-full py-4 bg-white shadow h-14'>
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
-            <a href="nafisa">Nafisa</a>
+            <a href="home" className='text-lg font-semibold'>Nowsin Akter</a>
             <ul className='items-center justify-around hidden gap-5 md:flex'>
                 <li><a className='text-lg font-semibold' href="#home">Home</a></li>
                 <li><a className='text-lg font-semibold' href="#about">About</a></li>
