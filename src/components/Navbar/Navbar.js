@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className='fixed top-0 z-50 w-full py-4 bg-white h-18'>
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
-            <a href="home" className='font-semibold'>
+            <a href="#home" className='font-semibold'>
               <div className="flex gap-4">
               <div>
                   <img src={Logo} alt="logo" className='object-contain w-12 h-12 rounded-full' />
