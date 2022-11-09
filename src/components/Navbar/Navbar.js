@@ -30,7 +30,7 @@ const Navbar = () => {
                 
                 <li><a className='text-lg font-semibold' href="#contact">Contact</a></li>
             </ul>
-          {nav &&   <ul className='absolute flex flex-col items-center justify-center w-full h-screen gap-5 transition bg-white top-14 md:hidden'>
+          {nav &&   <ul className='absolute flex flex-col items-center justify-center w-full h-screen gap-5 transition bg-white top-16 md:hidden'>
                 <li><a className='text-lg font-semibold' href="#home">Home</a></li>
                 <li><a className='text-lg font-semibold' href="#about">About</a></li>
                 <li><a className='text-lg font-semibold' href="#skill">Skills</a></li>
