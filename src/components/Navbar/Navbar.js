@@ -22,22 +22,22 @@ const Navbar = () => {
               </div>
             </a>
             <ul className='items-center justify-around hidden gap-5 md:flex'>
-                <li><a className='text-lg font-semibold' href="#home">Home</a></li>
-                <li><a className='text-lg font-semibold' href="#about">About</a></li>
-                <li><a className='text-lg font-semibold' href="#skill">Skills</a></li>
-                <li><a className='text-lg font-semibold' href="#services">Services</a></li>
-                <li><a className='text-lg font-semibold' href="#works">Works</a></li>
+            <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson] ' href="#home">Home</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#about">About</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#skill">Skills</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#services">Services</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#works">Works</a></li>
                 
-                <li><a className='text-lg font-semibold' href="#contact">Contact</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#contact">Contact</a></li>
             </ul>
           {nav &&   <ul className='absolute flex flex-col items-center justify-center w-full h-screen gap-5 transition bg-white top-16 md:hidden'>
-                <li><a className='text-lg font-semibold' href="#home">Home</a></li>
-                <li><a className='text-lg font-semibold' href="#about">About</a></li>
-                <li><a className='text-lg font-semibold' href="#skill">Skills</a></li>
-                <li><a className='text-lg font-semibold' href="#services">Services</a></li>
-                <li><a className='text-lg font-semibold' href="#works">Works</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson] ' href="#home">Home</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#about">About</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#skill">Skills</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#services">Services</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#works">Works</a></li>
                 
-                <li><a className='text-lg font-semibold' href="#contact">Contact</a></li>
+                <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#contact">Contact</a></li>
             </ul>}
             <div onClick={()=>setNav(!nav)} className='cursor-pointer md:hidden'>
              {nav ? <MdClose  size={30}/>:  <GoThreeBars size={30} />}
