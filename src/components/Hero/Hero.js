@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressBar from 'react-progressbar-on-scroll';
 import Typewriter from 'typewriter-effect';
 import fetchedImgSrc from '../../assets/bg.jpg';
 const Hero = () => {
@@ -28,6 +29,14 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    <ProgressBar
+  color="#00F5FF"
+  height={10}
+  direction="right"
+  position="bottom"
+  gradient={true}
+  gradientColor="#000"
+/>
     </div>
   )
 }
