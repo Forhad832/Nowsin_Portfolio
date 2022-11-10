@@ -30,11 +30,11 @@ const Project = () => {
             )
         })}
      </div>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+      <div data-aos="fade-up" data-aos-duration="1000" className="grid grid-cols-1 gap-10 md:grid-cols-3">
         {project.map((item)=>{
             const {id,name,img,text} = item;
             return (
-                <article key={id} className='relative'>
+                <article data-aos="zoom-in" data-aos-duration="1000" key={id} className='relative'>
                     <img className='object-cover w-full md:w-96 md:h-96' src={img} alt={name} />
                     <div className='absolute top-[50%] translate-y-[-50%] flex items-center justify-center flex-col  text-center opacity-0 hover:opacity-100 cursor-pointer bg-[rgba(0,0,0,0.8)] w-full h-full'>
                         
@@ -45,7 +45,8 @@ const Project = () => {
             )
         })}
       </div>
-      <a className='block px-6 py-2 mx-auto mt-20 text-xl font-semibold text-center uppercase border-2 border-gray-700 w-fit' href="https://www.flickr.com/photos/193248962@N08/albums/with/72177720301795446">View All</a>
+      <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000" className='block px-6 py-2 mx-auto mt-20 text-xl font-semibold text-center uppercase border-2 border-gray-700 w-fit' href="https://www.flickr.com/photos/193248962@N08/albums/with/72177720301795446">View All</a>
     </div>
   )
 }

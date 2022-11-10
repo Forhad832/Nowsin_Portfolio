@@ -10,7 +10,7 @@ const Work = () => {
         <h2 className='text-4xl font-bold uppercase'>What i do</h2>
         <Border />
       </div>
-      <div className="grid grid-cols-1 gap-10 py-20 md:grid-cols-3">
+      <div data-aos="fade-up" data-aos-duration="1000" className="grid grid-cols-1 gap-10 py-20 md:grid-cols-3">
         <div className='flex items-start gap-10'>
             <div>
             <DiIllustrator size={60} />

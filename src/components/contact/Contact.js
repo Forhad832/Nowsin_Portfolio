@@ -8,7 +8,7 @@ const Contact = () => {
 
       <div className='container px-4 py-20 mx-auto' id='contact'>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-        <div className='bg-white'>
+        <div className='bg-white' data-aos="fade-right" data-aos-duration="1000">
             <h2 className='text-xl font-semibold'>CONTACT ADDRESS</h2>
             <div className="w-32 mt-5 border border-black"></div>
                 <div className="w-64 my-2 border border-black"></div>
@@ -42,7 +42,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
             <form>
              <div className="flex justify-between w-full gap-3 mb-10">
              <div className='w-[50%]' >

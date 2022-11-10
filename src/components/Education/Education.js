@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className='container px-4 pb-20 mx-auto' id='skill'>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2" >
-        <div className='p-5 bg-white shadow'>
+        <div data-aos="fade-right" data-aos-duration="1000" className='p-5 bg-white shadow'>
             <h2 className='mb-10 text-lg uppercase'>EDucation</h2>
             <div className="flex items-center justify-between gap-5">
                 <div className='w-[30%]'>
@@ -29,7 +29,7 @@ Rangpur</small></p>
                 </div>
             </div>
         </div>
-        <div className='p-5 bg-white shadow'>
+        <div data-aos="fade-left" data-aos-duration="1000" className='p-5 bg-white shadow'>
             <Experience />
         </div>
       </div>

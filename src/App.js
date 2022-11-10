@@ -9,7 +9,7 @@ import Work from "./components/Work/Work";
 
 function App() {
   return (
-       <>
+       <div className='overflow-hidden'>
           <Navbar />
           <Hero />
           <About />
@@ -18,7 +18,7 @@ function App() {
           <Feedback />
           <Contact />
           <Footer />
-       </>
+       </div>
   );
 }
 
