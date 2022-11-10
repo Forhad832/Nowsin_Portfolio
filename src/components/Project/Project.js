@@ -6,18 +6,29 @@ console.log(alltype)
 const Project = () => {
     
     const [project,setProject] = useState(clientdata);
-   
+
     // eslint-disable-next-line no-unused-vars
-    const [pro,setPro] = useState(alltype)
-    const typeIs = pro.map((item)=> item);
-    console.log(typeIs)
+    const [pro,setPro] = useState(alltype);
+   
+
+   
+    const [active, setActive] = useState();
     const filtered = (type) =>{
+      setActive(type);
        if(type === 'illustrator'){
         return setProject(clientdata)
+       
        }
-       const filter = clientdata.filter((item)=> item.type === type);
-        return setProject(filter)
+       
+       const filter = clientdata.filter((item)=> {
+        return item.type === type;
+       });
+      
+      return setProject(filter);
+       
+        
     }
+
   return (
     <div className='container px-4 py-20 mx-auto' id='works'>
       <div className="text-center">
@@ -29,7 +40,7 @@ const Project = () => {
         {pro.map((item,i) => {
            
             return (
-                <button key={i} className={`bg-[#393E46] hover:bg-[crimson]  text-white px-3 py-2 text-lg ${typeIs === i && 'text-white px-3 py-2 text-lg bg-[crimson]'}`} onClick={()=>filtered(item)}>{item}</button>
+                <button key={i} className={`  ${active === item ? 'text-white px-3 py-2 text-lg bg-[crimson]':'bg-[#393E46] hover:bg-[crimson]  text-white px-3 py-2 text-lg'  }`} onClick={()=>filtered(item)}>{item}</button>
             )
         })}
      </div>
