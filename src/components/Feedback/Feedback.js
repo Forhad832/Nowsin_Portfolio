@@ -32,7 +32,7 @@ const Feedback = () => {
      <div> <img className='w-12 h-12 mx-auto rounded-full' src={img} alt={name} /></div>
       <div>
       <h3 className='text-lg font-bold text-left'>{name}</h3>
-      <p>Zumba Trainer</p>
+      <p>Public Speaker</p>
       </div>
       </div>
       <div className="flex items-center justify-center gap-10 mt-10">
