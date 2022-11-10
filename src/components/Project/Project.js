@@ -6,8 +6,11 @@ console.log(alltype)
 const Project = () => {
     
     const [project,setProject] = useState(clientdata);
+   
     // eslint-disable-next-line no-unused-vars
     const [pro,setPro] = useState(alltype)
+    const typeIs = pro.map((item)=> item);
+    console.log(typeIs)
     const filtered = (type) =>{
        if(type === 'illustrator'){
         return setProject(clientdata)
@@ -23,10 +26,10 @@ const Project = () => {
       </div>
     
      <div className='flex flex-wrap items-center justify-center gap-5 my-20'>
-        {pro.map((item) => {
-            
+        {pro.map((item,i) => {
+           
             return (
-                <button className='bg-[#393E46]  text-white px-3 py-2 text-lg' onClick={()=>filtered(item)}>{item}</button>
+                <button key={i} className={`bg-[#393E46] hover:bg-[crimson]  text-white px-3 py-2 text-lg ${typeIs === i && 'text-white px-3 py-2 text-lg bg-[crimson]'}`} onClick={()=>filtered(item)}>{item}</button>
             )
         })}
      </div>
@@ -35,7 +38,7 @@ const Project = () => {
             const {id,name,img,text} = item;
             return (
                 <article data-aos="zoom-in" data-aos-duration="1000" key={id} className='relative'>
-                    <img className='object-cover w-full md:w-96 md:h-96' src={img} alt={name} />
+                    <img className='w-full object-fit md:h-96' src={img} alt={name} />
                     <div className='absolute top-[50%] translate-y-[-50%] flex items-center justify-center flex-col  text-center opacity-0 hover:opacity-100 cursor-pointer bg-[rgba(0,0,0,0.8)] w-full h-full'>
                         
                         <p className='text-lg text-white'>{text}</p>

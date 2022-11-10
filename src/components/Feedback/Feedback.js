@@ -7,6 +7,17 @@ const Feedback = () => {
   const [review,setReview] = useState(clientdata)
   const [index,setIndex] = useState(0);
   const {id,name,img,text} = review[index];
+
+  const checkNumber = (number) =>{
+    if(number > review.length -1){
+        return 0
+    }
+    if(number <0){
+        return review.length -1
+    }
+    return number
+}
+
   return (
  <div className="bg-slate-600">
     <div className='container px-4 py-20 mx-auto '>
@@ -21,12 +32,12 @@ const Feedback = () => {
      <div> <img className='w-12 h-12 mx-auto rounded-full' src={img} alt={name} /></div>
       <div>
       <h3 className='text-lg font-bold text-left'>{name}</h3>
-      <p>Founder at Home</p>
+      <p>Zumba Trainer</p>
       </div>
       </div>
       <div className="flex items-center justify-center gap-10 mt-10">
-        <button className='px-3 py-2 text-white rounded bg-[#393E46]' onClick={()=>setIndex((prev)=> prev-1)} disabled={index===0 ? true : false}>Prev</button>
-        <button className='px-3 py-2 text-white rounded bg-[#393E46]' onClick={()=>setIndex((prev)=> prev+1)} disabled={index===2 ? true : false}>Next</button>
+        <button className='px-3 py-2 text-white rounded bg-[#393E46]' onClick={()=>setIndex((prev)=> {return checkNumber(prev-1)})} >Prev</button>
+        <button className='px-3 py-2 text-white rounded bg-[#393E46]' onClick={()=>setIndex((prev)=> {return checkNumber(prev+1)})} >Next</button>
       </div>
     </div>
    </div>
