@@ -22,7 +22,7 @@ const Feedback = () => {
  <div className="bg-slate-600">
     <div className='container px-4 py-20 mx-auto '>
     <div className="mb-16 text-center">
-        <h2 className='text-4xl font-bold text-white uppercase'>CLIENT'S FEEDBACK</h2>
+        <h2 className='text-3xl md:text-4xl font-bold text-white uppercase'>CLIENT'S FEEDBACK</h2>
         <Border />
       </div>
      <div data-aos="fade-up"

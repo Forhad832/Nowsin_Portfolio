@@ -32,7 +32,7 @@ const Project = () => {
   return (
     <div className='container px-4 py-20 mx-auto' id='works'>
       <div className="text-center">
-        <h2 className='text-4xl font-bold uppercase'>AWESOME PROJECTS</h2>
+        <h2 className='text-3xl md:text-4xl font-bold uppercase'>AWESOME PROJECTS</h2>
         <Border/>
       </div>
     

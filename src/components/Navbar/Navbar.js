@@ -30,7 +30,7 @@ const Navbar = () => {
                 
                 <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#contact">Contact</a></li>
             </ul>
-          {nav &&   <ul className='absolute flex flex-col items-center justify-center w-full h-screen gap-5 transition bg-white top-16 md:hidden'>
+          {nav &&   <ul className='absolute flex flex-col items-center justify-center w-full h-screen gap-5 transition left-0 bg-white top-16 md:hidden'>
                 <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson] ' href="#home">Home</a></li>
                 <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#about">About</a></li>
                 <li onClick={()=>setNav()}><a className='text-lg font-semibold hover:text-[crimson] active:text-[crimson]' href="#skill">Skills</a></li>

@@ -151,13 +151,7 @@ export const  clientdata = [
         name:'Portait Design',
         type:'Portait'
     },
-    {
-        id:19,
-        text:`We are Bring the Creativity`,
-        img:T1,
-        name:'Portait Design',
-        type:'Portait'
-    },
+   
     {
         id:20,
         text:`We are Bring the Creativity`,

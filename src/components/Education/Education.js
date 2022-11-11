@@ -13,7 +13,7 @@ const Education = () => {
                     <p><small className='font-bold '>Rangpur Polytechnic Institute</small></p>
                 </div>
                 <div className='w-[70%]'>
-                    <h2 className='mb-5 text-2xl'><span className='font-bold'>Computer</span> Science &amp; Technology</h2>
+                    <h2 className='mb-5 md:text-2xl'><span className='font-bold'>Computer</span> Science &amp; Technology</h2>
                     <p><small className=''>I am Learing computer science and Technology at Rangpur Polytechnic Istitute, Rangpur</small></p>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const Education = () => {
 Rangpur</small></p>
                 </div>
                 <div className='w-[70%]'>
-                    <h2 className='mb-5 text-2xl font-bold'>SSC</h2>
+                    <h2 className='mb-5 md:text-2xl font-bold'>SSC</h2>
                     <p><small className=''>I am Learing computer science and Technology at Rangpur Polytechnic Istitute, Rangpur</small></p>
                 </div>
             </div>

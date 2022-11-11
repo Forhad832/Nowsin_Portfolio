@@ -7,7 +7,7 @@ const About = () => {
   <div className="bg-slate-100" id='about'>
       <div className='container px-4 py-20 mx-auto '>
       <div className="text-center">
-        <h2 className='text-4xl font-bold uppercase'>About Me</h2>
+        <h2 className='text-3xl md:text-4xl font-bold uppercase'>About Me</h2>
         <Border />
       </div>
     
@@ -21,7 +21,7 @@ const About = () => {
         <div data-aos="fade-left" data-aos-duration="1000">
             <h2 className='text-2xl'>EXPERT  <span className='font-bold'>IN</span></h2>
             <p className='my-4 text-lg '>Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Praesent tristique scelerisque sapien at aliquet.</p>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid md:grid-cols-3 gap-2">
                 <div className='flex items-center justify-center px-2 py-2 text-white bg-green-700 md:text-lg'>
                     <h2>T-shirt Design</h2>
                 </div>

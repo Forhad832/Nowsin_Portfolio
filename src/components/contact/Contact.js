@@ -20,7 +20,7 @@ const Contact = () => {
                         <AiFillHome size={25} />
                     </div>
                     <div>
-                        <p className='text-lg'><small>Purbo Asratpur,Tajhat, Rangpur, Alamnagar, Rangpur Sadar, Rangpur 5402</small></p>
+                        <p className='text-lg'><small> Rangpur Sadar, Rangpur 5402,Dhaka Bangladesh</small></p>
                     </div>
                 </div>
                 <div className="flex items-start gap-5">
@@ -44,11 +44,11 @@ const Contact = () => {
         </div>
         <div data-aos="fade-left" data-aos-duration="1000">
             <form>
-             <div className="flex justify-between w-full gap-3 mb-10">
-             <div className='w-[50%]' >
+             <div className="flex justify-between sm:flex-row flex-col  w-full gap-3 mb-10">
+             <div className='md:w-[50%]' >
                 <input className='w-full px-3 py-1 border border-gray-300 outline-none ' type="text" placeholder='Name' />
             </div>
-            <div className='w-[50%]'>
+            <div className='md:w-[50%]'>
                 <input type="email" className='w-full px-3 py-1 border border-gray-300 outline-none' placeholder='Email' />
             </div>
              </div>

@@ -41,14 +41,7 @@ function Experience () {
                    </span>
                </div>
            </div>
-           <div className="w-full mx-3 mb-6">
-            <span className="font-semibold md:font-bold md:text-lg">Filmora</span>
-            <div className="w-full h-3 mt-2 bg-gray-500">
-                <span className="h-full w-[60%] bg-green-600 block relative">
-                    <span className="absolute -right-3 -top-7 bg-[crimson] text-white px-2">60%</span>
-                </span>
-            </div>
-          </div>
+          
            
        </div>
    )
